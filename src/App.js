@@ -5,7 +5,7 @@ function App() {
   const [boards, setBoards] = useState([]);
 
   useEffect(() => {
-    axios.get('http://1127-test-01-2131918684.ap-northeast-2.elb.amazonaws.com:8080/api/boards')
+    axios.get('http://1127-test-02-288167636.ap-northeast-2.elb.amazonaws.com:8080/api/boards')
       .then(response => {
         setBoards(response.data);
       })
